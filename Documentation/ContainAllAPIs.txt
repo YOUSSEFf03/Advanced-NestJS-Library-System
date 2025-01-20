@@ -1,4 +1,8 @@
-	1. Auth Controller
+"If you encounter any issues with Prettier, use the following command:
+npx prettier --write ."
+
+
+1. Auth Controller
 Login
 URL: http://localhost:3000/auth/login
 

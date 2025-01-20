@@ -37,18 +37,18 @@ export class BooksService {
     if (!book) {
       throw new NotFoundException('Book not found');
     }
-
+  
     if (status !== 'approved' && status !== 'rejected') {
       throw new BadRequestException('Invalid status. Must be "approved" or "rejected".');
     }
-
+  
     book.status = status;
     await book.save();
-
-    if (status === 'approved') {
+  
+    if (status === 'approved' && book.branches && book.branches.length > 0) {
       await this.distributeBookToBranches(bookId, book.branches);
     }
-
+  
     return book;
   }
 

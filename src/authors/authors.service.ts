@@ -19,7 +19,7 @@ export class AuthorsService {
   async addAuthor(createAuthorDto: CreateAuthorDto): Promise<Author> {
     const { email, name } = createAuthorDto;
 
-    // Check if the user already exists
+    
     const existingUser = await this.userModel.findOne({ email }).exec();
     if (existingUser) {
       throw new BadRequestException('User with this email already exists');
@@ -124,27 +124,36 @@ export class AuthorsService {
     return { averageApprovalTimeInMinutes };
   }
 
-
   async getBranchDistribution(authorId: string): Promise<{ branchId: string, totalCopies: number }[]> {
     const books = await this.bookModel.find({ authorId }).exec();
-    console.log('Books:', books); // Debug: Check if books are found
+    // console.log('Books:', books); 
   
     const branchDistributionMap = new Map<string, number>();
   
     books.forEach(book => {
-      console.log('Book:', book); // Debug: Check each book
-      const copiesPerBranch = book.copies / book.branches.length; // Distribute copies equally across branches
-      book.branches.forEach(branchId => {
+      // console.log('Book:', book); 
+  
+      
+      if (!book.branches || !Array.isArray(book.branches)) {
+        // console.warn(`Book ${book._id} has invalid or missing branches field. Skipping...`);
+        return; 
+      }
+  
+      const baseCopies = Math.floor(book.copies / book.branches.length); 
+      const remainder = book.copies % book.branches.length; 
+  
+      book.branches.forEach((branchId, index) => {
         const currentCopies = branchDistributionMap.get(branchId) || 0;
-        branchDistributionMap.set(branchId, currentCopies + copiesPerBranch);
+        const additionalCopies = baseCopies + (index < remainder ? 1 : 0); 
+        branchDistributionMap.set(branchId, currentCopies + additionalCopies);
       });
     });
   
-    console.log('Branch Distribution Map:', branchDistributionMap); // Debug: Check the final map
+    //console.log('Branch Distribution Map:', branchDistributionMap); 
   
     return Array.from(branchDistributionMap.entries()).map(([branchId, totalCopies]) => ({
       branchId,
-      totalCopies: Math.round(totalCopies), // Round to the nearest whole number
+      totalCopies, 
     }));
   }
 }

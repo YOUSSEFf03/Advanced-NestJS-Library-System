@@ -105,9 +105,9 @@ export class UsersService {
       email,
       password: hashedPinCode,
       role: 'Author', 
-      fullName: name, 
-      returnRate: 100, 
-      borrowHistory: [], 
+      fullName: name,
+      returnRate: 100,
+      borrowHistory: [],
     });
 
     await newAuthor.save();

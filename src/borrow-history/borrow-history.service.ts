@@ -21,71 +21,61 @@ export class BorrowHistoryService {
 
   async borrowBook(createBorrowHistoryDto: CreateBorrowHistoryDto): Promise<BorrowHistory> {
     const { userId, bookId, branchId } = createBorrowHistoryDto;
-
-    // Check if the user's return rate is above 30%
+  
     const user = await this.usersService.findOneById(userId);
     if (user.returnRate < 30) {
       throw new BadRequestException('User is not allowed to borrow books due to low return rate');
     }
-
-    // Check if the book is available
+  
     const book = await this.booksService.borrowBook(userId, bookId, branchId);
     if (!book) {
       throw new BadRequestException('Book not available for borrowing');
     }
-
-    // Calculate the due date (1 minute from now for testing)
+  
     const borrowDate = new Date();
-    const dueDate = new Date(borrowDate.getTime() + RETURN_TIME_MINUTES * 60 * 1000); // 1 minute
-
-    // Create a new borrow history record
+    const dueDate = new Date(borrowDate.getTime() + RETURN_TIME_MINUTES * 60 * 1000);
+  
     const borrowedBook = new this.borrowHistoryModel({
       ...createBorrowHistoryDto,
       borrowDate,
       dueDate,
     });
     const savedBorrowHistory = await borrowedBook.save();
-
-    // Add the borrow history record to the user's borrowHistory array
+  
     user.borrowHistory.push((savedBorrowHistory as BorrowHistory & { _id: string })._id.toString());
     await user.save();
-
-    // Notify the author
-    const authorId = book.authorId; // Assuming the book schema has an authorId field
+  
+    const authorId = book.authorId;
     const message = `Your book "${book.title}" has been borrowed by ${user.email}.`;
     await this.notificationsService.createNotification(authorId, message);
-
+  
     return savedBorrowHistory;
   }
-
+  
   async returnBook(borrowHistoryId: string): Promise<BorrowHistory> {
     const updatedBorrowHistory = await this.borrowHistoryModel.findByIdAndUpdate(
       borrowHistoryId,
       { status: 'returned', returnDate: new Date() },
       { new: true },
     );
-
+  
     if (!updatedBorrowHistory) {
       throw new NotFoundException('Borrow history record not found');
     }
-
-    // Update the book inventory when the book is returned
+  
     await this.booksService.returnBook(updatedBorrowHistory.bookId, updatedBorrowHistory.branchId);
-
-    // Check if the book was returned late
+  
     const isLate =
       updatedBorrowHistory.returnDate && updatedBorrowHistory.returnDate > updatedBorrowHistory.dueDate;
-
-    // Update the user's return rate
-    await this.updateUserReturnRate(updatedBorrowHistory.userId, !!isLate); // Ensure isLate is a boolean
-
+  
+    await this.updateUserReturnRate(updatedBorrowHistory.userId, !!isLate);
+  
     return updatedBorrowHistory;
   }
-
+  
   async findAll(): Promise<BorrowHistory[]> {
     return this.borrowHistoryModel.find().exec();
   }
-
 
   private async updateUserReturnRate(userId: string, isLate: boolean): Promise<void> {
     const user = await this.usersService.findOneById(userId);

@@ -16,11 +16,12 @@ import { TasksController } from './tasks/tasks.controller';
 import { TasksModule } from './tasks/tasks.module';
 import { NotificationsModule } from './notifications/notifications.module';
 import { WebsocketModule } from './websocket/websocket.module';
+import { ConfigModule } from '@nestjs/config';
 
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb+srv://Yousseffarah313:SI4Uquuo1kf6z38l@cluster0.xsy7f.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'),
+    MongooseModule.forRoot(process.env.MONGO_URI || 'fallback_mongodb_uri'),
     ScheduleModule.forRoot(),
     BranchesModule,
     UsersModule,

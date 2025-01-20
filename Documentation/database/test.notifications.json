@@ -1,0 +1,112 @@
+[{
+  "_id": {
+    "$oid": "678d4b7a1cb5fdf7ee18b770"
+  },
+  "userId": {
+    "$oid": "678d44f81cb5fdf7ee18b732"
+  },
+  "message": "Your book \"Harry Potter and the Philosopher's Stone\" has been borrowed by michael.brown@example.com.",
+  "isRead": true,
+  "timestamp": {
+    "$date": "2025-01-19T18:59:06.221Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678d507f1cb5fdf7ee18b77d"
+  },
+  "userId": {
+    "$oid": "678d44c91cb5fdf7ee18b728"
+  },
+  "message": "Your book \"Pride and Prejudice\" has been borrowed by emily.jones@example.com.",
+  "isRead": false,
+  "timestamp": {
+    "$date": "2025-01-19T19:20:31.446Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678d50a61cb5fdf7ee18b78a"
+  },
+  "userId": {
+    "$oid": "678d44d81cb5fdf7ee18b72d"
+  },
+  "message": "Your book \"The Fault in Our Stars\" has been borrowed by david.wilson@example.com.",
+  "isRead": false,
+  "timestamp": {
+    "$date": "2025-01-19T19:21:10.900Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678d50bc1cb5fdf7ee18b797"
+  },
+  "userId": {
+    "$oid": "678d44b01cb5fdf7ee18b723"
+  },
+  "message": "Your book \"To Kill a Mockingbird\" has been borrowed by sarah.miller@example.com.",
+  "isRead": false,
+  "timestamp": {
+    "$date": "2025-01-19T19:21:32.587Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678d50dc1cb5fdf7ee18b7a4"
+  },
+  "userId": {
+    "$oid": "678d44b01cb5fdf7ee18b723"
+  },
+  "message": "Your book \"To Kill a Mockingbird\" has been borrowed by sarah.miller@example.com.",
+  "isRead": false,
+  "timestamp": {
+    "$date": "2025-01-19T19:22:04.937Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678d50fa1cb5fdf7ee18b7b1"
+  },
+  "userId": {
+    "$oid": "678d44b01cb5fdf7ee18b723"
+  },
+  "message": "Your book \"1984\" has been borrowed by james.taylor@example.com.",
+  "isRead": false,
+  "timestamp": {
+    "$date": "2025-01-19T19:22:34.041Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678d51141cb5fdf7ee18b7be"
+  },
+  "userId": {
+    "$oid": "678d44b01cb5fdf7ee18b723"
+  },
+  "message": "Your book \"1984\" has been borrowed by james.taylor@example.com.",
+  "isRead": false,
+  "timestamp": {
+    "$date": "2025-01-19T19:23:00.032Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678def1ff51fae81f5a9f6cd"
+  },
+  "userId": {
+    "$oid": "678d44b01cb5fdf7ee18b723"
+  },
+  "message": "Your book \"The Great Gatsby\" has been borrowed by john.doe@example.com.",
+  "isRead": false,
+  "timestamp": {
+    "$date": "2025-01-20T06:37:19.336Z"
+  },
+  "__v": 0
+}]

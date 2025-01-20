@@ -1,0 +1,100 @@
+[{
+  "_id": {
+    "$oid": "678c42208c5ae4164ac8be58"
+  },
+  "name": "Main Library",
+  "address": "123 Library Street",
+  "books": [
+    {
+      "$oid": "64f1b2c3e4b0f8a9d8e9f0a2"
+    },
+    {
+      "$oid": "678ccc2b633915888e40238c"
+    },
+    {
+      "$oid": "678d47f41cb5fdf7ee18b738"
+    },
+    {
+      "$oid": "678d480e1cb5fdf7ee18b73a"
+    },
+    {
+      "$oid": "678d48231cb5fdf7ee18b73c"
+    },
+    {
+      "$oid": "678d484e1cb5fdf7ee18b73e"
+    },
+    {
+      "$oid": "678d485c1cb5fdf7ee18b740"
+    }
+  ],
+  "__v": 3
+},
+{
+  "_id": {
+    "$oid": "678d48c11cb5fdf7ee18b744"
+  },
+  "name": "Main Branch",
+  "address": "123 Library St, City A",
+  "books": [
+    {
+      "$oid": "678d47f41cb5fdf7ee18b738"
+    },
+    {
+      "$oid": "678d485c1cb5fdf7ee18b740"
+    },
+    {
+      "$oid": "678d47f41cb5fdf7ee18b738"
+    },
+    {
+      "$oid": "678d480e1cb5fdf7ee18b73a"
+    },
+    {
+      "$oid": "678d48231cb5fdf7ee18b73c"
+    },
+    {
+      "$oid": "678d48691cb5fdf7ee18b742"
+    },
+    {
+      "$oid": "678df8f9f51fae81f5a9f6f3"
+    }
+  ],
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "678d48cc1cb5fdf7ee18b746"
+  },
+  "name": "Downtown Branch",
+  "address": "456 Book Ave, City B",
+  "books": [
+    {
+      "$oid": "678d480e1cb5fdf7ee18b73a"
+    },
+    {
+      "$oid": "678d484e1cb5fdf7ee18b73e"
+    },
+    {
+      "$oid": "678d47f41cb5fdf7ee18b738"
+    }
+  ],
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "678d48d91cb5fdf7ee18b748"
+  },
+  "name": "Westside Branch",
+  "address": "789 Reading Rd, City C",
+  "books": [
+    {
+      "$oid": "678d48231cb5fdf7ee18b73c"
+    },
+    {
+      "$oid": "678d48691cb5fdf7ee18b742"
+    },
+    {
+      "$oid": "678d47f41cb5fdf7ee18b738"
+    }
+  ],
+  "__v": 2
+}]

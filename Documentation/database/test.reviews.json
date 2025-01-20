@@ -1,0 +1,155 @@
+[{
+  "_id": {
+    "$oid": "678d60118a01f09010612336"
+  },
+  "bookId": {
+    "$oid": "678d47f41cb5fdf7ee18b738"
+  },
+  "userId": {
+    "$oid": "678d42d01cb5fdf7ee18b70c"
+  },
+  "comment": "A timeless classic! Loved every page.",
+  "rating": 5,
+  "likes": [
+    {
+      "$oid": "678d42d01cb5fdf7ee18b70c"
+    },
+    {
+      "$oid": "678d43901cb5fdf7ee18b712"
+    },
+    {
+      "$oid": "678d43a51cb5fdf7ee18b714"
+    },
+    {
+      "$oid": "678d43de1cb5fdf7ee18b716"
+    },
+    {
+      "$oid": "678d44211cb5fdf7ee18b718"
+    },
+    {
+      "$oid": "678d43091cb5fdf7ee18b70e"
+    },
+    {
+      "$oid": "678d43301cb5fdf7ee18b710"
+    },
+    {
+      "$oid": "678d44361cb5fdf7ee18b71a"
+    },
+    {
+      "$oid": "678d44481cb5fdf7ee18b71c"
+    },
+    {
+      "$oid": "678d44571cb5fdf7ee18b71e"
+    }
+  ],
+  "__v": 10
+},
+{
+  "_id": {
+    "$oid": "678d601a8a01f09010612339"
+  },
+  "bookId": {
+    "$oid": "678d480e1cb5fdf7ee18b73a"
+  },
+  "userId": {
+    "$oid": "678d43901cb5fdf7ee18b712"
+  },
+  "comment": "A chilling depiction of a dystopian future.",
+  "rating": 4,
+  "likes": [],
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "678d60228a01f0901061233c"
+  },
+  "bookId": {
+    "$oid": "678d48231cb5fdf7ee18b73c"
+  },
+  "userId": {
+    "$oid": "678d43a51cb5fdf7ee18b714"
+  },
+  "comment": "A powerful story about justice and morality.",
+  "rating": 5,
+  "likes": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678d60298a01f0901061233f"
+  },
+  "bookId": {
+    "$oid": "678d484e1cb5fdf7ee18b73e"
+  },
+  "userId": {
+    "$oid": "678d43de1cb5fdf7ee18b716"
+  },
+  "comment": "A delightful romance with memorable characters.",
+  "rating": 4,
+  "likes": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678d602f8a01f09010612342"
+  },
+  "bookId": {
+    "$oid": "678d485c1cb5fdf7ee18b740"
+  },
+  "userId": {
+    "$oid": "678d44211cb5fdf7ee18b718"
+  },
+  "comment": "A heartwarming and emotional journey.",
+  "rating": 5,
+  "likes": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678d60378a01f09010612345"
+  },
+  "bookId": {
+    "$oid": "678d48691cb5fdf7ee18b742"
+  },
+  "userId": {
+    "$oid": "678d43091cb5fdf7ee18b70e"
+  },
+  "comment": "A magical start to an incredible series!",
+  "rating": 5,
+  "likes": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678df524f51fae81f5a9f6e4"
+  },
+  "bookId": {
+    "$oid": "678d47f41cb5fdf7ee18b738"
+  },
+  "userId": {
+    "$oid": "678d44481cb5fdf7ee18b71c"
+  },
+  "comment": "one of the best",
+  "rating": 4,
+  "likes": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678df555f51fae81f5a9f6e7"
+  },
+  "bookId": {
+    "$oid": "678d47f41cb5fdf7ee18b738"
+  },
+  "userId": {
+    "$oid": "678d44571cb5fdf7ee18b71e"
+  },
+  "comment": "did not like it ",
+  "rating": 2,
+  "likes": [
+    {
+      "$oid": "678d44571cb5fdf7ee18b71e"
+    }
+  ],
+  "__v": 1
+}]

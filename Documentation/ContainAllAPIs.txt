@@ -1,0 +1,211 @@
+	1. Auth Controller
+Login
+URL: http://localhost:3000/auth/login
+
+Method: POST
+
+Request Body: { "email": "john@example.com", "password": "password123" }
+
+2. Authors Controller
+Add Author
+URL: http://localhost:3000/authors/add
+
+Method: POST
+
+Request Body: { "email": "tarek@example.com", "name": "Tarek" }
+
+Submit Book
+URL: http://localhost:3000/authors/submit-book
+
+Method: POST
+
+Request Body: { "authorId": "author123", "title": "The Great Gatsby", "genre": "Fiction", "description": "A classic novel about the American Dream.", "minAge": 16, "copies": 10, "pdfUrl": "http://example.com/the-great-gatsby.pdf", "coverImageUrl": "http://example.com/the-great-gatsby.jpg", "isOpenToReview": true, "branches": ["branch1", "branch2"] }
+
+Get All Authors
+URL: http://localhost:3000/authors
+
+Method: GET
+
+Request Body: None
+
+Get Author by ID
+URL: http://localhost:3000/authors/:id
+
+Method: GET
+
+Request Body: None
+
+Get Book Requests by Status
+URL: http://localhost:3000/authors/:authorId/book-requests
+
+Method: GET
+
+Request Body: None
+
+Get Average Approval Time
+URL: http://localhost:3000/authors/:authorId/average-approval-time
+
+Method: GET
+
+Request Body: None
+
+Get Branch Distribution
+URL: http://localhost:3000/authors/:authorId/branch-distribution
+
+Method: GET
+
+Request Body: None
+
+3. Books Controller
+Get All Books
+URL: http://localhost:3000/books
+
+Method: GET
+
+Request Body: None
+
+Create Book
+URL: http://localhost:3000/books
+
+Method: POST
+
+Request Body: { "title": "The Great Gatsby", "genre": "Fiction", "description": "A classic novel about the American Dream.", "minAge": 16, "copies": 10, "pdfUrl": "http://example.com/the-great-gatsby.pdf", "coverImageUrl": "http://example.com/the-great-gatsby.jpg", "isOpenToReview": true, "branches": ["branch1", "branch2"], "authorId": "author123" }
+
+Approve Book
+URL: http://localhost:3000/books/approve-book/:bookId
+
+Method: POST
+
+Request Body: { "status": "approved" }
+
+Borrow Book
+URL: http://localhost:3000/books/borrow
+
+Method: POST
+
+Request Body: { "userId": "64f8b1e2e4b0f5a3d4e5f6a8", "bookId": "64f8b1e2e4b0f5a3d4e5f6a9", "branchId": "64f8b1e2e4b0f5a3d4e5f6b0" }
+
+4. Borrow History Controller
+Borrow Book
+URL: http://localhost:3000/borrow-history/borrow
+
+Method: POST
+
+Request Body: { "userId": "64f8b1e2e4b0f5a3d4e5f6a8", "bookId": "64f8b1e2e4b0f5a3d4e5f6a9", "branchId": "64f8b1e2e4b0f5a3d4e5f6b0" }
+
+Return Book
+URL: http://localhost:3000/borrow-history/return/:id
+
+Method: POST
+
+Request Body: None
+
+Get All Borrow History
+URL: http://localhost:3000/borrow-history
+
+Method: GET
+
+Request Body: None
+
+5. Branches Controller
+Get All Branches
+URL: http://localhost:3000/branches
+
+Method: GET
+
+Request Body: None
+
+Create Branch
+URL: http://localhost:3000/branches
+
+Method: POST
+
+Request Body: { "name": "Main Branch", "address": "123 Main St", "books": ["book123"] }
+
+Add Books to Branch
+URL: http://localhost:3000/branches/:branchId/add-books
+
+Method: POST
+
+Request Body: { "bookIds": ["book123", "book456"] }
+
+Get Branch by ID
+URL: http://localhost:3000/branches/:branchId
+
+Method: GET
+
+Request Body: None
+
+6. CMS Controller
+Create CMS User
+URL: http://localhost:3000/cms/create-cms-user
+
+Method: POST
+
+Request Body: { "email": "admin@example.com", "fullName": "Admin User", "role": "Admin" }
+
+Get Dashboard Data
+URL: http://localhost:3000/cms/dashboard
+
+Method: GET
+
+Request Body: None
+
+7. Notifications Controller
+Get Notifications for User
+URL: http://localhost:3000/notifications/:userId
+
+Method: GET
+
+Request Body: None
+
+Mark Notification as Read
+URL: http://localhost:3000/notifications/mark-as-read/:notificationId
+
+Method: PUT
+
+Request Body: None
+
+8. Reviews Controller
+Create Review
+URL: http://localhost:3000/reviews
+
+Method: POST
+
+Request Body: { "bookId": "book123", "userId": "user123", "comment": "Great book!", "rating": 5 }
+
+Like Review
+URL: http://localhost:3000/reviews/:reviewId/like/:userId
+
+Method: PUT
+
+Request Body: None
+
+Unlike Review
+URL: http://localhost:3000/reviews/:reviewId/unlike/:userId
+
+Method: PUT
+
+Request Body: None
+
+Get Reviews for Book
+URL: http://localhost:3000/reviews/book/:bookId
+
+Method: GET
+
+Request Body: None
+
+9. Users Controller
+Get All Users
+URL: http://localhost:3000/users
+
+Method: GET
+
+Request Body: None
+
+Create User
+URL: http://localhost:3000/users
+
+Method: POST
+
+Request Body: { "email": "john@example.com", "password": "password123", "role": "Member", "returnRate": 100, "borrowHistory": [] }

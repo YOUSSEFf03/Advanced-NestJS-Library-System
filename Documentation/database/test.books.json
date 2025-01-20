@@ -1,0 +1,181 @@
+[{
+  "_id": {
+    "$oid": "678d47f41cb5fdf7ee18b738"
+  },
+  "title": "The Great Gatsby",
+  "genre": "Fiction",
+  "description": "A classic novel about the American Dream.",
+  "minAge": 13,
+  "copies": 5,
+  "pdfUrl": "http://example.com/great-gatsby.pdf",
+  "coverImageUrl": "http://example.com/great-gatsby.jpg",
+  "isOpenToReview": true,
+  "branches": [
+    "678c42208c5ae4164ac8be58",
+    "678d48c11cb5fdf7ee18b744",
+    "678d48cc1cb5fdf7ee18b746",
+    "678d48d91cb5fdf7ee18b748"
+  ],
+  "authorId": "678d44b01cb5fdf7ee18b723",
+  "status": "approved",
+  "isbn": "978886417375",
+  "createdAt": {
+    "$date": "2025-01-19T18:44:04.778Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-20T06:37:18.836Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678d480e1cb5fdf7ee18b73a"
+  },
+  "title": "1984",
+  "genre": "Dystopian",
+  "description": "A dystopian novel about totalitarianism.",
+  "minAge": 14,
+  "copies": 5,
+  "pdfUrl": "http://example.com/1984.pdf",
+  "coverImageUrl": "http://example.com/1984.jpg",
+  "isOpenToReview": true,
+  "branches": [],
+  "authorId": "678d44b01cb5fdf7ee18b723",
+  "status": "rejected",
+  "isbn": "978856945437",
+  "createdAt": {
+    "$date": "2025-01-19T18:44:30.573Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-20T06:34:08.102Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678d48231cb5fdf7ee18b73c"
+  },
+  "title": "To Kill a Mockingbird",
+  "genre": "Fiction",
+  "description": "A story of racial injustice and moral growth.",
+  "minAge": 14,
+  "copies": 8,
+  "pdfUrl": "http://example.com/mockingbird.pdf",
+  "coverImageUrl": "http://example.com/mockingbird.jpg",
+  "isOpenToReview": true,
+  "branches": [
+    "678c42208c5ae4164ac8be58\n"
+  ],
+  "authorId": "678d44b01cb5fdf7ee18b723",
+  "status": "approved",
+  "isbn": "978975665778",
+  "createdAt": {
+    "$date": "2025-01-19T18:44:51.520Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-19T20:46:31.709Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678d484e1cb5fdf7ee18b73e"
+  },
+  "title": "Pride and Prejudice",
+  "genre": "Romance",
+  "description": "A romantic novel about Elizabeth Bennet and Mr. Darcy.",
+  "minAge": 12,
+  "copies": 12,
+  "pdfUrl": "http://example.com/pride-and-prejudice.pdf",
+  "coverImageUrl": "http://example.com/pride-and-prejudice.jpg",
+  "isOpenToReview": true,
+  "branches": [],
+  "authorId": "678d44c91cb5fdf7ee18b728",
+  "status": "rejected",
+  "isbn": "978097454694",
+  "createdAt": {
+    "$date": "2025-01-19T18:45:34.394Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-19T20:47:44.758Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678d485c1cb5fdf7ee18b740"
+  },
+  "title": "The Fault in Our Stars",
+  "genre": "Young Adult",
+  "description": "A heartwarming story about two teenagers with cancer.",
+  "minAge": 13,
+  "copies": 13,
+  "pdfUrl": "http://example.com/fault-in-our-stars.pdf",
+  "coverImageUrl": "http://example.com/fault-in-our-stars.jpg",
+  "isOpenToReview": true,
+  "branches": [
+    "678c42208c5ae4164ac8be58",
+    "678d48c11cb5fdf7ee18b744"
+  ],
+  "authorId": "678d44d81cb5fdf7ee18b72d",
+  "status": "approved",
+  "isbn": "978859378485",
+  "createdAt": {
+    "$date": "2025-01-19T18:45:48.944Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-20T06:40:17.828Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678d48691cb5fdf7ee18b742"
+  },
+  "title": "Harry Potter and the Philosopher's Stone",
+  "genre": "Fantasy",
+  "description": "The first book in the Harry Potter series.",
+  "minAge": 10,
+  "copies": 20,
+  "pdfUrl": "http://example.com/harry-potter-1.pdf",
+  "coverImageUrl": "http://example.com/harry-potter-1.jpg",
+  "isOpenToReview": true,
+  "branches": [],
+  "authorId": "678d44f81cb5fdf7ee18b732",
+  "status": "rejected",
+  "isbn": "978804566864",
+  "createdAt": {
+    "$date": "2025-01-19T18:46:01.566Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-19T20:47:55.518Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678df8f9f51fae81f5a9f6f3"
+  },
+  "title": "Another Book Title",
+  "genre": "Science Fiction",
+  "description": "This is a description of another book.",
+  "minAge": 16,
+  "copies": 5,
+  "pdfUrl": "http://example.com/another-book.pdf",
+  "coverImageUrl": "http://example.com/another-book.jpg",
+  "isOpenToReview": false,
+  "branches": [
+    "678d48c11cb5fdf7ee18b744",
+    "678d48cc1cb5fdf7ee18b746"
+  ],
+  "authorId": "678d44b01cb5fdf7ee18b723",
+  "status": "pending",
+  "isbn": "978343753918",
+  "createdAt": {
+    "$date": "2025-01-20T07:19:21.978Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-20T07:19:21.978Z"
+  },
+  "__v": 0
+}]

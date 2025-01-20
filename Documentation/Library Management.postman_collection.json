@@ -1,0 +1,401 @@
+{
+	"info": {
+		"_postman_id": "163cba90-e0f9-46a1-904d-38308234548a",
+		"name": "Library Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "40355306"
+	},
+	"item": [
+		{
+			"name": "Auth Module",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"user@example.com\",\r\n  \"password\": \"password123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/auth/login"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"user101@example.com\",\r\n  \"password\": \"password123\",\r\n  \"role\": \"Member\",\r\n  \"returnRate\": 100,\r\n  \"borrowHistory\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/users"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/users"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authors",
+			"item": [
+				{
+					"name": "Submit Book",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n  \"authorId\": \"678d44b01cb5fdf7ee18b723\",\r\n  \"title\": \"The wall\",\r\n  \"genre\": \"Fiction\",\r\n  \"description\": \"A classic novel about the American Dream.\",\r\n  \"minAge\": 13,\r\n  \"copies\": 100,\r\n  \"pdfUrl\": \"http://example.com/the-great-gatsby.pdf\",\r\n  \"coverImageUrl\": \"http://example.com/the-great-gatsby.jpg\",\r\n  \"isOpenToReview\": true,\r\n  \"branches\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/authors/submit-book"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Author",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"author@example.com\",\r\n  \"name\": \"Author Name\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/authors/add"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Authors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/authors"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Author by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/authors/678d44b01cb5fdf7ee18b723"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Book Requests by Status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/authors/678d44b01cb5fdf7ee18b723/book-requests"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Average Approval Time",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/authors/678d44b01cb5fdf7ee18b723/average-approval-time"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Branch Distribution",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/authors/678d44b01cb5fdf7ee18b723/branch-distribution"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Books",
+			"item": [
+				{
+					"name": "submit book",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"authorId\": \"678d44b01cb5fdf7ee18b723\",\r\n  \"title\": \"Book Title\",\r\n  \"genre\": \"Fiction\",\r\n  \"description\": \"Book description\",\r\n  \"minAge\": 13,\r\n  \"copies\": 10,\r\n  \"pdfUrl\": \"http://example.com/book.pdf\",\r\n  \"coverImageUrl\": \"http://example.com/book.jpg\",\r\n  \"isOpenToReview\": true,\r\n  \"branches\": []\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/authors/submit-book"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/books"
+					},
+					"response": []
+				},
+				{
+					"name": "Borrow Book",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": \"678d42d01cb5fdf7ee18b70c\",\r\n  \"bookId\": \"678d485c1cb5fdf7ee18b740\",\r\n  \"branchId\":\"678c42208c5ae4164ac8be58\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/borrow-history/borrow"
+					},
+					"response": []
+				},
+				{
+					"name": "Return Book",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "http://localhost:3000/borrow-history/return/678def1ef51fae81f5a9f6ca"
+					},
+					"response": []
+				},
+				{
+					"name": "Approve Book",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"status\": \"approved\" // or \"rejected\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/books/approve-book/678df8f9f51fae81f5a9f6f3"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Borrow History",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/borrow-history"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CMS",
+			"item": [
+				{
+					"name": "Create CMS User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"email\": \"admin@example.com\", \r\n\"fullName\": \"Admin User\",\r\n \"role\": \"Admin\" // or Intern \r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/cms/create-cms-user"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Dashboard Data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/cms/dashboard"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Notifications Controller",
+			"item": [
+				{
+					"name": "Get Notifications for Author",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/notifications/678d44b01cb5fdf7ee18b723"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": "http://localhost:3000/notifications/mark-as-read/678d507f1cb5fdf7ee18b77d"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reviews",
+			"item": [
+				{
+					"name": "Create new Review",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"bookId\": \"678d47f41cb5fdf7ee18b738\",\r\n  \"userId\": \"678d44c91cb5fdf7ee18b726\",\r\n  \"comment\": \"Great book!\",\r\n  \"rating\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/reviews"
+					},
+					"response": []
+				},
+				{
+					"name": "Likes a review",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": "http://localhost:3000/reviews/678d601a8a01f09010612339/like/678d42d01cb5fdf7ee18b70c"
+					},
+					"response": []
+				},
+				{
+					"name": "Unlikes a review",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": "http://localhost:3000/reviews/678d601a8a01f09010612339/unlike/678d42d01cb5fdf7ee18b70c"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieves reviews for a specific book",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/reviews/book/678d47f41cb5fdf7ee18b738"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Branches",
+			"item": [
+				{
+					"name": "Get branches",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/branches"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Branch",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"leb Branch\",\r\n  \"address\": \"123 Main St\",\r\n  \"books\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/branches"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Books to Branch",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"bookIds\": [\"678d480e1cb5fdf7ee18b73a\"]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/branches/678d48d91cb5fdf7ee18b748/add-books"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Branch by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/branches/678c42208c5ae4164ac8be58"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

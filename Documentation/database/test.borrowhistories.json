@@ -1,0 +1,222 @@
+[{
+  "_id": {
+    "$oid": "678d4b341cb5fdf7ee18b753"
+  },
+  "userId": {
+    "$oid": "678d42d01cb5fdf7ee18b70c"
+  },
+  "bookId": {
+    "$oid": "678d47f41cb5fdf7ee18b738"
+  },
+  "branchId": {
+    "$oid": "678d48c11cb5fdf7ee18b744"
+  },
+  "borrowDate": {
+    "$date": "2025-01-19T18:57:56.055Z"
+  },
+  "dueDate": {
+    "$date": "2025-01-19T18:58:56.055Z"
+  },
+  "status": "returned",
+  "__v": 0,
+  "returnDate": {
+    "$date": "2025-01-19T18:58:08.362Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678d4b5d1cb5fdf7ee18b760"
+  },
+  "userId": {
+    "$oid": "678d43901cb5fdf7ee18b712"
+  },
+  "bookId": {
+    "$oid": "678d480e1cb5fdf7ee18b73a"
+  },
+  "branchId": {
+    "$oid": "678d48cc1cb5fdf7ee18b746"
+  },
+  "borrowDate": {
+    "$date": "2025-01-19T18:58:37.607Z"
+  },
+  "dueDate": {
+    "$date": "2025-01-19T18:59:37.607Z"
+  },
+  "status": "returned",
+  "__v": 0,
+  "returnDate": {
+    "$date": "2025-01-19T18:58:50.980Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678d4b791cb5fdf7ee18b76d"
+  },
+  "userId": {
+    "$oid": "678d43a51cb5fdf7ee18b714"
+  },
+  "bookId": {
+    "$oid": "678d48691cb5fdf7ee18b742"
+  },
+  "branchId": {
+    "$oid": "678d48d91cb5fdf7ee18b748"
+  },
+  "borrowDate": {
+    "$date": "2025-01-19T18:59:05.822Z"
+  },
+  "dueDate": {
+    "$date": "2025-01-19T19:00:05.822Z"
+  },
+  "status": "returned",
+  "__v": 0,
+  "returnDate": {
+    "$date": "2025-01-19T18:59:21.937Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678d507f1cb5fdf7ee18b77a"
+  },
+  "userId": {
+    "$oid": "678d43de1cb5fdf7ee18b716"
+  },
+  "bookId": {
+    "$oid": "678d484e1cb5fdf7ee18b73e"
+  },
+  "branchId": {
+    "$oid": "678d48cc1cb5fdf7ee18b746"
+  },
+  "borrowDate": {
+    "$date": "2025-01-19T19:20:31.036Z"
+  },
+  "dueDate": {
+    "$date": "2025-01-19T19:21:31.036Z"
+  },
+  "status": "returned",
+  "__v": 0,
+  "returnDate": {
+    "$date": "2025-01-19T19:20:55.509Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678d50a61cb5fdf7ee18b787"
+  },
+  "userId": {
+    "$oid": "678d44211cb5fdf7ee18b718"
+  },
+  "bookId": {
+    "$oid": "678d485c1cb5fdf7ee18b740"
+  },
+  "branchId": {
+    "$oid": "678d48c11cb5fdf7ee18b744"
+  },
+  "borrowDate": {
+    "$date": "2025-01-19T19:21:10.563Z"
+  },
+  "dueDate": {
+    "$date": "2025-01-19T19:22:10.563Z"
+  },
+  "status": "returned",
+  "__v": 0,
+  "returnDate": {
+    "$date": "2025-01-19T19:21:20.544Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678d50bc1cb5fdf7ee18b794"
+  },
+  "userId": {
+    "$oid": "678d43091cb5fdf7ee18b70e"
+  },
+  "bookId": {
+    "$oid": "678d48231cb5fdf7ee18b73c"
+  },
+  "branchId": {
+    "$oid": "678d48d91cb5fdf7ee18b748"
+  },
+  "borrowDate": {
+    "$date": "2025-01-19T19:21:32.169Z"
+  },
+  "dueDate": {
+    "$date": "2025-01-19T19:22:32.169Z"
+  },
+  "status": "returned",
+  "__v": 0,
+  "returnDate": {
+    "$date": "2025-01-19T19:21:44.437Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678d50dc1cb5fdf7ee18b7a1"
+  },
+  "userId": {
+    "$oid": "678d43091cb5fdf7ee18b70e"
+  },
+  "bookId": {
+    "$oid": "678d48231cb5fdf7ee18b73c"
+  },
+  "branchId": {
+    "$oid": "678d48d91cb5fdf7ee18b748"
+  },
+  "borrowDate": {
+    "$date": "2025-01-19T19:22:04.537Z"
+  },
+  "dueDate": {
+    "$date": "2025-01-19T19:23:04.537Z"
+  },
+  "status": "returned",
+  "__v": 0,
+  "returnDate": {
+    "$date": "2025-01-19T19:22:18.976Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678d50f91cb5fdf7ee18b7ae"
+  },
+  "userId": {
+    "$oid": "678d43301cb5fdf7ee18b710"
+  },
+  "bookId": {
+    "$oid": "678d480e1cb5fdf7ee18b73a"
+  },
+  "branchId": {
+    "$oid": "678d48cc1cb5fdf7ee18b746"
+  },
+  "borrowDate": {
+    "$date": "2025-01-19T19:22:33.499Z"
+  },
+  "dueDate": {
+    "$date": "2025-01-19T19:23:33.499Z"
+  },
+  "status": "returned",
+  "__v": 0,
+  "returnDate": {
+    "$date": "2025-01-19T19:22:44.625Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "678def1ef51fae81f5a9f6ca"
+  },
+  "userId": {
+    "$oid": "678d42d01cb5fdf7ee18b70c"
+  },
+  "bookId": {
+    "$oid": "678d47f41cb5fdf7ee18b738"
+  },
+  "branchId": {
+    "$oid": "678c42208c5ae4164ac8be58"
+  },
+  "borrowDate": {
+    "$date": "2025-01-20T06:37:18.998Z"
+  },
+  "dueDate": {
+    "$date": "2025-01-20T06:38:18.998Z"
+  },
+  "status": "borrowed",
+  "__v": 0
+}]

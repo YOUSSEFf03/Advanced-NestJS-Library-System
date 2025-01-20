@@ -1,0 +1,213 @@
+[{
+  "_id": {
+    "$oid": "678d42d01cb5fdf7ee18b70c"
+  },
+  "email": "john.doe@example.com",
+  "password": "$2b$10$1W4mmWyPyWryOSP2d6/NPOFDD3SZGiXDVoz2KsNpsCue.RqCaXBPy",
+  "role": "Member",
+  "returnRate": 100,
+  "borrowHistory": [
+    {
+      "$oid": "678d4b341cb5fdf7ee18b753"
+    },
+    {
+      "$oid": "678def1ef51fae81f5a9f6ca"
+    }
+  ],
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "678d43091cb5fdf7ee18b70e"
+  },
+  "email": "sarah.miller@example.com",
+  "password": "$2b$10$NuC/fUJ0nzamHNZHtNTNdu6qdKfpE7FDczZPTsFybASV9EAw9AvpC",
+  "role": "Member",
+  "returnRate": 100,
+  "borrowHistory": [
+    {
+      "$oid": "678d50bc1cb5fdf7ee18b794"
+    },
+    {
+      "$oid": "678d50dc1cb5fdf7ee18b7a1"
+    }
+  ],
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "678d43301cb5fdf7ee18b710"
+  },
+  "email": "james.taylor@example.com",
+  "password": "$2b$10$stCcekdVvfvTrC6vqGKVV.NDtBf4mY1I74RffO64J1pOlJ2Ii8qQm",
+  "role": "Member",
+  "returnRate": 100,
+  "borrowHistory": [
+    {
+      "$oid": "678d50f91cb5fdf7ee18b7ae"
+    },
+    {
+      "$oid": "678d51131cb5fdf7ee18b7bb"
+    }
+  ],
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "678d43901cb5fdf7ee18b712"
+  },
+  "email": "jane.smith@example.com",
+  "password": "$2b$10$eGxBIB7QaE5RxvD7dFuvnuWfPhsrty2bxKYNFUR4AUF8f3PY9bJ.W",
+  "role": "Member",
+  "returnRate": 100,
+  "borrowHistory": [
+    {
+      "$oid": "678d4b5d1cb5fdf7ee18b760"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "678d43a51cb5fdf7ee18b714"
+  },
+  "email": "michael.brown@example.com",
+  "password": "$2b$10$bz5EtNFd8DQJKUrtUho0LOVi/u11A8ZvgWmBjeDhUJOz4eLeb1.l2",
+  "role": "Member",
+  "returnRate": 100,
+  "borrowHistory": [
+    {
+      "$oid": "678d4b791cb5fdf7ee18b76d"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "678d43de1cb5fdf7ee18b716"
+  },
+  "email": "emily.jones@example.com",
+  "password": "$2b$10$agt764btRKKsdOvHGwNj5ut3kDnew0E/dVaPDuY0IQjtMhBrcSSgm",
+  "role": "Member",
+  "returnRate": 100,
+  "borrowHistory": [
+    {
+      "$oid": "678d507f1cb5fdf7ee18b77a"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "678d44211cb5fdf7ee18b718"
+  },
+  "email": "david.wilson@example.com",
+  "password": "$2b$10$sM0QEHDPi533pkWWV93rhOp5O3KF/KyPP0ZUFZVpAuyy2R.1UfLRy",
+  "role": "Member",
+  "returnRate": 100,
+  "borrowHistory": [
+    {
+      "$oid": "678d50a61cb5fdf7ee18b787"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "678d44361cb5fdf7ee18b71a"
+  },
+  "email": "linda.anderson@example.com",
+  "password": "$2b$10$H36CyF1U0uaALS905MaRQeUB9BJv4lN9DfP0PeMn1EkTVcHEWZFwi",
+  "role": "Member",
+  "returnRate": 100,
+  "borrowHistory": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678d44481cb5fdf7ee18b71c"
+  },
+  "email": "robert.thomas@example.com",
+  "password": "$2b$10$3Bl8QrmRVAI.6VX8AxMqI.ZC9iaWf2IMCS6/n2jFOuapleCRWzLTS",
+  "role": "Member",
+  "returnRate": 100,
+  "borrowHistory": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678d44571cb5fdf7ee18b71e"
+  },
+  "email": "mary.moore@example.com",
+  "password": "$2b$10$h5EvOExO0hPLawM6glHnu.9o9aGCyzGCUEjDxljWmEzxUB5N/chm6",
+  "role": "Member",
+  "returnRate": 100,
+  "borrowHistory": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678d44b01cb5fdf7ee18b721"
+  },
+  "email": "tarek.ahmed@example.com",
+  "password": "$2b$10$kht1MmBLrLp.FahoykpVD.dvJbMgfQ1NZ/B0CzmlqUmDNK5.iHa2y",
+  "role": "Author",
+  "returnRate": 100,
+  "borrowHistory": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678d44c91cb5fdf7ee18b726"
+  },
+  "email": "sarah.jones@example.com",
+  "password": "$2b$10$oBh3PLNBl.7P3oinIhh9c.4PacNMJMbUaXj2eVcqK92L4KcvIuMsa",
+  "role": "Author",
+  "returnRate": 100,
+  "borrowHistory": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678d44d81cb5fdf7ee18b72b"
+  },
+  "email": "john.green@example.com",
+  "password": "$2b$10$FGGBcztuThAfl03fIHC1uecQdrbnO3J8J/.djRDucey1Bt7gnA0nK",
+  "role": "Author",
+  "returnRate": 100,
+  "borrowHistory": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678d44f81cb5fdf7ee18b730"
+  },
+  "email": "j.k.rowling@example.com",
+  "password": "$2b$10$dh5pnoQb.osiXWvnR6XbSe7Xn4X.06kbKXeASwNMmPLjwPrgRZbqq",
+  "role": "Author",
+  "returnRate": 100,
+  "borrowHistory": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678d45cd1cb5fdf7ee18b734"
+  },
+  "email": "admin@example.com",
+  "password": "$2b$10$51/CGWNuieo65KazSu9RRujF5rAeq.ggiHrCr0TgzJNXY/.dCuxbS",
+  "role": "Admin",
+  "returnRate": 100,
+  "borrowHistory": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678d45dd1cb5fdf7ee18b736"
+  },
+  "email": "intern@example.com",
+  "password": "$2b$10$zfCu5fvHDeLJ1SQ5DfgG7Ocu4wH5Fb9zE4MQdJyGf4XEivp/lb.te",
+  "role": "Intern",
+  "returnRate": 100,
+  "borrowHistory": [],
+  "__v": 0
+}]
